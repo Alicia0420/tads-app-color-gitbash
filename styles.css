@@ -1,0 +1,55 @@
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tarjeta principal */
+.custom-card {
+    background: #1e1e2f;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+/* Inputs */
+.custom-input {
+    background-color: #2b2b3c;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.custom-input:focus {
+    background-color: #2b2b3c;
+    color: #fff;
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+/* Esfera de color */
+#colorBox {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid #555;
+    box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.15),
+        0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #121212;
+    color: #ccc;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+

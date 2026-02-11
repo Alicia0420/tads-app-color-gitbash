@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector de Color RGB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container py-5">
+    <h2 class="text-center mb-4 text-light"> - Selector de Color RGB - <br>🔴🟢🔵<br></h2>
+
+    <div class="card custom-card">
+        <div class="row g-4">
+
+            <!-- CONTROLES -->
+            <div class="col-md-6">
+                <h5 class="text-light mb-3">Controles RGB</h5>
+
+                <!-- ROJO -->
+                <div class="mb-3">
+                    <label class="form-label text-danger">Rojo (🔴)</label>
+                    <input type="range" class="form-range" min="0" max="255" id="red" value="0">
+                    <input type="number" class="form-control custom-input" min="0" max="255" id="redInput" value="0">
+                </div>
+
+                <!-- VERDE -->
+                <div class="mb-3">
+                    <label class="form-label text-success">Verde (🟢)</label>
+                    <input type="range" class="form-range" min="0" max="255" id="green" value="0">
+                    <input type="number" class="form-control custom-input" min="0" max="255" id="greenInput" value="0">
+                </div>
+
+                <!-- AZUL -->
+                <div class="mb-3">
+                    <label class="form-label text-primary">Azul (🔵)</label>
+                    <input type="range" class="form-range" min="0" max="255" id="blue" value="0">
+                    <input type="number" class="form-control custom-input" min="0" max="255" id="blueInput" value="0">
+                </div>
+            </div>
+
+            <!-- COLOR -->
+            <div class="col-md-6 text-center">
+                <h5 class="text-light mb-3">Vista del Color</h5>
+
+                <div id="colorBox"></div>
+
+                <p class="mt-3 text-light">
+                    <strong>RGB:</strong> <span id="rgbCode">rgb(0, 0, 0)</span>
+                </p>
+                <p class="text-light">
+                    <strong>HEX:</strong> <span id="hexCode">#000000</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+    <p class="mb-1"><strong>Escuela:</strong> Instituto Tecnológico de Pachuca</p>
+    <p class="mb-1"><strong>Materia:</strong> Taller Avanzado de DEsarrollo de Software</p>
+    <p><strong>Docente:</strong>Luis Alejandro Santana Valadez</p>
+    <p class="mb-1"><strong>Nombre:</strong> Alicia Yamileth Mariano Reséndiz</p>
+    <p class="mb-1"><strong>Número de control:</strong> 22200787</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
